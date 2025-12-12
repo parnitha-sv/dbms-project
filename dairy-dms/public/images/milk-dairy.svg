@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7cb342;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#558b2f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1200" height="250" fill="url(#skyGradient)"/>
+  
+  <!-- Grass background -->
+  <rect y="250" width="1200" height="150" fill="url(#grassGradient)"/>
+  
+  <!-- Sun -->
+  <circle cx="1050" cy="60" r="50" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Clouds -->
+  <g opacity="0.7">
+    <ellipse cx="200" cy="60" rx="50" ry="30" fill="#fff"/>
+    <ellipse cx="240" cy="50" rx="40" ry="25" fill="#fff"/>
+    <ellipse cx="160" cy="50" rx="35" ry="20" fill="#fff"/>
+  </g>
+  
+  <g opacity="0.6">
+    <ellipse cx="900" cy="120" rx="45" ry="28" fill="#fff"/>
+    <ellipse cx="935" cy="115" rx="38" ry="22" fill="#fff"/>
+    <ellipse cx="865" cy="115" rx="32" ry="18" fill="#fff"/>
+  </g>
+  
+  <!-- Barn building -->
+  <g transform="translate(100, 150)">
+    <!-- Barn body -->
+    <rect x="0" y="50" width="180" height="120" fill="#b71c1c" stroke="#8b0000" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <polygon points="0,50 90,0 180,50" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Door -->
+    <rect x="70" y="100" width="40" height="70" fill="#654321" stroke="#333" stroke-width="2"/>
+    <circle cx="107" cy="135" r="3" fill="#ffd700"/>
+    
+    <!-- Windows -->
+    <rect x="20" y="70" width="25" height="25" fill="#87ceeb" stroke="#333" stroke-width="1"/>
+    <line x1="32.5" y1="70" x2="32.5" y2="95" stroke="#333" stroke-width="1"/>
+    <line x1="20" y1="82.5" x2="45" y2="82.5" stroke="#333" stroke-width="1"/>
+    
+    <rect x="135" y="70" width="25" height="25" fill="#87ceeb" stroke="#333" stroke-width="1"/>
+    <line x1="147.5" y1="70" x2="147.5" y2="95" stroke="#333" stroke-width="1"/>
+    <line x1="135" y2="82.5" x2="160" y2="82.5" stroke="#333" stroke-width="1"/>
+    
+    <!-- Flag pole -->
+    <rect x="85" y="0" width="3" height="45" fill="#333"/>
+    <polygon points="88,5 88,15 100,10" fill="#ffa500"/>
+  </g>
+  
+  <!-- Milk containers -->
+  <g transform="translate(350, 200)">
+    <!-- Container 1 -->
+    <rect x="0" y="20" width="50" height="60" rx="5" fill="#e8f4f8" stroke="#1976d2" stroke-width="2"/>
+    <ellipse cx="25" cy="20" rx="25" ry="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+    <text x="25" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1976d2">Milk</text>
+    
+    <!-- Container 2 -->
+    <rect x="70" y="15" width="50" height="65" rx="5" fill="#e8f4f8" stroke="#1976d2" stroke-width="2"/>
+    <ellipse cx="95" cy="15" rx="25" ry="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+    <text x="95" y="52" text-anchor="middle" font-size="12" font-weight="bold" fill="#1976d2">Milk</text>
+    
+    <!-- Container 3 -->
+    <rect x="140" y="25" width="50" height="55" rx="5" fill="#e8f4f8" stroke="#1976d2" stroke-width="2"/>
+    <ellipse cx="165" cy="25" rx="25" ry="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+    <text x="165" y="57" text-anchor="middle" font-size="12" font-weight="bold" fill="#1976d2">Milk</text>
+  </g>
+  
+  <!-- Dairy cows -->
+  <g transform="translate(650, 150)">
+    <!-- Cow 1 -->
+    <g transform="translate(0, 50)">
+      <ellipse cx="40" cy="40" rx="50" ry="35" fill="#fff" stroke="#333" stroke-width="2"/>
+      <circle cx="95" cy="35" r="30" fill="#fff" stroke="#333" stroke-width="2"/>
+      <!-- Spots -->
+      <ellipse cx="30" cy="40" rx="20" ry="25" fill="#333" opacity="0.5"/>
+      <ellipse cx="70" cy="50" rx="18" ry="20" fill="#333" opacity="0.5"/>
+      <!-- Legs -->
+      <rect x="25" y="70" width="10" height="35" fill="#fff" stroke="#333" stroke-width="2"/>
+      <rect x="45" y="70" width="10" height="35" fill="#fff" stroke="#333" stroke-width="2"/>
+      <rect x="65" y="70" width="10" height="35" fill="#fff" stroke="#333" stroke-width="2"/>
+      <rect x="85" y="65" width="10" height="40" fill="#fff" stroke="#333" stroke-width="2"/>
+      <!-- Head details -->
+      <circle cx="103" cy="20" r="8" fill="#333"/>
+      <circle cx="113" cy="20" r="8" fill="#333"/>
+      <ellipse cx="90" cy="12" rx="8" ry="15" fill="#fff" stroke="#333" stroke-width="1"/>
+      <ellipse cx="115" cy="12" rx="8" ry="15" fill="#fff" stroke="#333" stroke-width="1"/>
+    </g>
+    
+    <!-- Cow 2 (slightly back) -->
+    <g transform="translate(120, 70)" opacity="0.85">
+      <ellipse cx="40" cy="40" rx="50" ry="35" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+      <circle cx="95" cy="35" r="30" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+      <!-- Spots -->
+      <ellipse cx="25" cy="35" rx="22" ry="27" fill="#8b7355" opacity="0.6"/>
+      <ellipse cx="75" cy="50" rx="20" ry="22" fill="#8b7355" opacity="0.6"/>
+      <!-- Legs -->
+      <rect x="25" y="70" width="10" height="35" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+      <rect x="45" y="70" width="10" height="35" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+      <rect x="65" y="70" width="10" height="35" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+      <rect x="85" y="65" width="10" height="40" fill="#f5deb3" stroke="#333" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="900" y="300" font-size="36" font-weight="bold" fill="#fff" font-family="Arial, sans-serif" text-anchor="middle">
+    Dairy Farm Management
+  </text>
+  <text x="900" y="335" font-size="18" fill="#f0f0f0" font-family="Arial, sans-serif" text-anchor="middle">
+    Quality Milk • Happy Cows • Fresh Dairy
+  </text>
+</svg>

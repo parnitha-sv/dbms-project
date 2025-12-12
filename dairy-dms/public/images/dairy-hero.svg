@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357abd;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Cow illustration -->
+  <g transform="translate(150, 100)">
+    <!-- Body -->
+    <ellipse cx="80" cy="100" rx="70" ry="60" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head -->
+    <circle cx="160" cy="80" r="40" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Ears -->
+    <ellipse cx="145" cy="35" rx="12" ry="25" fill="#fff" stroke="#333" stroke-width="2"/>
+    <ellipse cx="175" cy="35" rx="12" ry="25" fill="#fff" stroke="#333" stroke-width="2"/>
+    <ellipse cx="147" cy="40" rx="6" ry="15" fill="#f4a460"/>
+    <ellipse cx="173" cy="40" rx="6" ry="15" fill="#f4a460"/>
+    
+    <!-- Eyes -->
+    <circle cx="150" cy="70" r="4" fill="#333"/>
+    <circle cx="170" cy="70" r="4" fill="#333"/>
+    
+    <!-- Snout -->
+    <ellipse cx="162" cy="95" rx="15" ry="12" fill="#f4a460"/>
+    
+    <!-- Nostrils -->
+    <circle cx="157" cy="95" r="2" fill="#333"/>
+    <circle cx="167" cy="95" r="2" fill="#333"/>
+    
+    <!-- Legs -->
+    <rect x="50" y="150" width="15" height="60" fill="#fff" stroke="#333" stroke-width="2"/>
+    <rect x="90" y="150" width="15" height="60" fill="#fff" stroke="#333" stroke-width="2"/>
+    <rect x="130" y="150" width="15" height="60" fill="#fff" stroke="#333" stroke-width="2"/>
+    <rect x="170" y="150" width="15" height="60" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Hooves -->
+    <rect x="50" y="210" width="15" height="8" fill="#333"/>
+    <rect x="90" y="210" width="15" height="8" fill="#333"/>
+    <rect x="130" y="210" width="15" height="8" fill="#333"/>
+    <rect x="170" y="210" width="15" height="8" fill="#333"/>
+    
+    <!-- Spots -->
+    <ellipse cx="60" cy="100" rx="18" ry="22" fill="#333" opacity="0.6"/>
+    <ellipse cx="110" cy="110" rx="15" ry="18" fill="#333" opacity="0.6"/>
+    
+    <!-- Udder -->
+    <ellipse cx="85" cy="155" rx="20" ry="12" fill="#f4a460"/>
+    
+    <!-- Tail -->
+    <path d="M 160 155 Q 200 140 220 120" stroke="#333" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Milk jug illustration -->
+  <g transform="translate(450, 120)">
+    <!-- Jug body -->
+    <path d="M 30 20 L 20 80 Q 20 100 40 100 L 60 100 Q 80 100 80 80 L 70 20 Z" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Handle -->
+    <path d="M 70 40 Q 100 50 100 70 Q 100 85 85 90" fill="none" stroke="#fff" stroke-width="8"/>
+    <path d="M 70 40 Q 100 50 100 70 Q 100 85 85 90" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Lid -->
+    <ellipse cx="50" cy="20" rx="20" ry="8" fill="#ddd" stroke="#333" stroke-width="2"/>
+    
+    <!-- Milk inside -->
+    <ellipse cx="50" cy="70" rx="28" ry="18" fill="#f5deb3" opacity="0.8"/>
+    
+    <!-- Shine -->
+    <ellipse cx="35" cy="50" rx="8" ry="15" fill="#fff" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="120" font-size="48" font-weight="bold" fill="#fff" font-family="Arial, sans-serif">
+    Dairy Management System
+  </text>
+  <text x="600" y="170" font-size="24" fill="#e8f4f8" font-family="Arial, sans-serif">
+    Track • Manage • Optimize
+  </text>
+  
+  <!-- Milk drops decoration -->
+  <circle cx="950" cy="80" r="8" fill="#e8f4f8" opacity="0.7"/>
+  <circle cx="1000" cy="100" r="6" fill="#e8f4f8" opacity="0.7"/>
+  <circle cx="1050" cy="75" r="7" fill="#e8f4f8" opacity="0.7"/>
+  <circle cx="1090" cy="110" r="5" fill="#e8f4f8" opacity="0.7"/>
+</svg>
