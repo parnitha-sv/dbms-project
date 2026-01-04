@@ -1,0 +1,54 @@
+CREATE database milk_Dairy;
+
+USERS TABLE (Signup + Login)
+CREATE TABLE users_cred(
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+FARMERS TABLE (Cow/Buffalo Owners)
+CREATE TABLE  farmers (
+    farmer_id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    village VARCHAR(100),
+    phone VARCHAR(15),
+    join_date DATE DEFAULT CURRENT_DATE,
+    is_active BOOLEAN DEFAULT TRUE
+);
+
+
+
+MILK_COLLECTIONS TABLE (Daily Entry)
+This is the most important table
+CREATE TABLE milk_collections (
+    collection_id SERIAL PRIMARY KEY,
+    farmer_id INT NOT NULL REFERENCES farmers(farmer_id) ON DELETE CASCADE,
+    collection_date DATE NOT NULL,
+    session VARCHAR(20) NOT NULL,              -- Morning / Evening
+    milk_type VARCHAR(20) NOT NULL,            -- Cow / Buffalo
+    quantity_liters NUMERIC(10,2) NOT NULL CHECK (quantity_liters > 0),
+    fat_percentage NUMERIC(4,2),
+    rate_per_liter NUMERIC(10,2) NOT NULL,     -- new rate column
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+
+PAYMENTS TABLE (Monthly Payments)
+ Records farmer-wise bills
+CREATE TABLE payments (
+    payment_id SERIAL PRIMARY KEY,
+    farmer_id INT NOT NULL REFERENCES farmers(farmer_id) ON DELETE CASCADE,
+    month_year DATE NOT NULL,                  -- store 1st day of month
+    total_liters NUMERIC(10,2) NOT NULL,
+    amount_payable NUMERIC(10,2) NOT NULL,
+    amount_paid NUMERIC(10,2) DEFAULT 0,
+    payment_date DATE,
+    status VARCHAR(20) DEFAULT 'pending',     -- pending/partial/paid
+    generated_at TIMESTAMP DEFAULT NOW(),
+    CONSTRAINT unique_payment_per_month UNIQUE (farmer_id, month_year)
+);
+
+
